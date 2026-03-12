@@ -8,4 +8,4 @@ theme:
 nav:
   - Home: index.md
   - LXD Extension:
-      - Knowledge Base: "!import https://github.com/Unity-Environmental-University/lxd-tools?branch=release/3.0.0"
+      - Knowledge Base: "!import https://github.com/Unity-Environmental-University/lxd-tools?branch=release/3.0.0&docs_dir=docs"
