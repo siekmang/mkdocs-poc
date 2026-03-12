@@ -9,7 +9,7 @@ plugins:
         - section: lxd-tools
           import_url: "https://github.com/Unity-Environmental-University/lxd-tools?branch=release/3.0.0"
           # WARN; Patching this right now, in the long term, it would be better to have a mkdocs.yml file in the repo
-          docs_dir: docs
+          dir: docs
 
 nav:
   - Home: index.md
