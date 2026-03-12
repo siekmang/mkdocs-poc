@@ -1,6 +1,6 @@
 site_name: LXD Tools Portal
 site_url: https://siekmang.github.io/mkdocs-poc/
-use_directory_urls: true
+use_directory_urls: false
 
 theme:
   name: material
@@ -8,10 +8,9 @@ theme:
 plugins:
   - search
   - multirepo:
-      repos:
-        - section: lxdtools
-          import_url: "https://github.com/Unity-Environmental-University/lxd-tools?branch=release/3.0.0"
+      # We leave this empty because the plugin is "ignoring" it anyway
+      repos: []
 
 nav:
   - Home: index.md
-  - LXD Extension: "!import lxdtools"
+  - LXD Extension: "!import https://github.com/Unity-Environmental-University/lxd-tools?branch=release/3.0.0"
