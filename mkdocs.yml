@@ -1,7 +1,11 @@
 site_name: LXD Tools Portal
+site_url: https://siekmang.github.io/mkdocs-poc/
+use_directory_urls: false
+
 theme:
   name: material
 
 nav:
   - Home: index.md
-  - Tooling Documentation: "!import https://github.com/Unity-Environmental-University/lxd-tools?branch=release/3.0.0"
+  - LXD Extension:
+      - Knowledge Base: "!import https://github.com/Unity-Environmental-University/lxd-tools?branch=release/3.0.0"
