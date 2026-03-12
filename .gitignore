@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+.env
+
+# MkDocs
+site/
+resources/
+
+# OS/IDEs
+.DS_Store
+.vscode/
+.idea/
+
+# Node (if you ever use search plugins that require it)
+node_modules/

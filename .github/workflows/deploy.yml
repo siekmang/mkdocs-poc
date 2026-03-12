@@ -1,0 +1,28 @@
+name: publish-docs
+on:
+  push:
+    branches: [main]
+  repository_dispatch:
+    types: [rebuild-docs]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PoC Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material mkdocs-multirepo-plugin
+
+      - name: Build and Deploy to GH Pages
+        run: |
+          # If using a private repo, uncomment the next line:
+          # export GithubAccessToken=${{ secrets.GH_TOKEN }}
+          mkdocs gh-deploy --force

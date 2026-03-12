@@ -1,0 +1,20 @@
+site_name: Internal Tooling Portal
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - search.suggest
+
+plugins:
+  - search
+  - multirepo:
+      cleanup: true
+      repos:
+        - section: "LXD Web Extension"
+          import_url: "https://github.com/Unity-Environmental-University/lxd-tools?branch=release/3.0.0"
+        - section: "Secondary Service"
+          import_url: "https://github.com/your-username/another-repo"
+
+nav:
+  - Home: index.md
+  - Tooling Documentation: "!import" # This tells it to inject the multi-repo docs here
