@@ -6,7 +6,7 @@ plugins:
   - search
   - multirepo:
       repos:
-        - section: lxd-tools
+        - section: lxdtools
           # WARN; Patching this right now, in the long term, it would be better to have a mkdocs.yml file in the repo instead of docs_dir in the URL
           import_url: "https://github.com/Unity-Environmental-University/lxd-tools?branch=release/3.0.0&docs_dir=docs"
 
