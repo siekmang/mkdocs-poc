@@ -15,5 +15,4 @@ plugins:
 nav:
   - Home: index.md
   - LXD Extension:
-      # This looks inside the 'lxdtools' import for the specific file
-      - Knowledge Base: lxdtools/KNOWLEDGE_BASE.md
+      - Knowledge Base: "!import lxdtools"
