@@ -2,13 +2,6 @@ site_name: LXD Tools Portal
 theme:
   name: material
 
-plugins:
-  - search
-  - multirepo:
-      repos:
-        - section: lxdtools
-          import_url: "https://github.com/Unity-Environmental-University/lxd-tools?branch=release/3.0.0"
-
 nav:
   - Home: index.md
-  - Tooling Documentation: "!import lxdtools"
+  - Tooling Documentation: "!import https://github.com/Unity-Environmental-University/lxd-tools?branch=release/3.0.0"
