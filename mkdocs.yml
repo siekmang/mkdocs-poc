@@ -14,5 +14,5 @@ plugins:
 nav:
   - Home: index.md
   - Learning Design Extension: "!import https://github.com/Unity-Environmental-University/lxd-tools?branch=release/3.0.0"
-  - ueu-canvas package: "!import https://github.com/Unity-Environmental-University/ueu_canvas"
+  - ueu-canvas package: "!import https://github.com/Unity-Environmental-University/ueu_canvas?branch=main"
   - Sprint Summary Script: "!import https://github.com/siekmangs/trello-reporting-tool"
