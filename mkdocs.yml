@@ -8,7 +8,7 @@ theme:
 plugins:
   - search
   - multirepo:
-      # We leave this empty because the plugin is "ignoring" it anyway
+      # We leave this empty because the plugin is ignoring it anyway
       repos: []
 
 nav:
